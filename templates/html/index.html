@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Account</title>
+</head>
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Персональные данные</legend>
+                <ul>
+                    <li>
+                        <label for="name">Имя: <span aria-hidden="true">*</span></label>
+                        <input type="text" name="name" placeholder="Введите Ваше Имя" id="name" required aria-required="true">
+                    </li>
+                    <li>
+                        <label for="age">Возраст:</label>
+                        <input type="number" name="age" placeholder="Введите Ваш Возраст" id="age" min="0" max="125">
+                    </li>
+                </ul>
+            </fieldset>
+            <div>
+                <button type="submit">Отправить</button>
+                <p><span aria-hidden="true">*</span> — Обязательные поля</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

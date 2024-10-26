@@ -1,0 +1,91 @@
+/* Устанавливаем высоту и сбрасываем отступы */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для body */
+body {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #ff7e5f);
+    background-size: 400% 400%; /* Увеличиваем размер фона */
+    animation: gradientShift 15s ease infinite; /* Добавляем анимацию */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%; /* Устанавливаем минимальную высоту */
+}
+
+/* Анимация для переливающегося фона */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Стили для формы */
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для формы */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+}
+
+/* Стили для fieldset */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Стили для legend */
+legend {
+    font-weight: bold;
+}
+
+/* Стили для ul и li */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+/* Стили для label */
+label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+
+/* Стили для input */
+input[type="text"], input[type="number"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Стили для кнопки */
+button[type="submit"] {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #feb47b;
+}
